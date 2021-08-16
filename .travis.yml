@@ -1,0 +1,27 @@
+language: node_js
+cache: 
+  directories:
+    - node_modules
+    - ~/.npm
+node_js:
+  - '12'
+git: 
+  depth: 3
+script:
+  - yarn test
+notifications:
+  slack: mxrold:R2CZFMsqcm84SgP7k1wMvkNP
+  email:
+    recipients:
+      - martinroldan889@gmail.com
+      - martin.davrold@gmail.com
+    on_success: always
+    on_failure: always
+deploy:
+  provider: heroku
+  skip-cleanup: true
+  keep-history: true
+  api_key: e5bbf636-9dbd-46a9-a11d-071f20ea2e54
+  app: travisci-backend-heroku
+  on:
+    repo: mxrold/travisci-backend-heroku
