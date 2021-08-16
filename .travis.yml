@@ -10,7 +10,8 @@ git:
 script:
   - yarn test
 notifications:
-  slack: mxrold:R2CZFMsqcm84SgP7k1wMvkNP
+  slack:
+    secure: "DDf+J0bDq/ePFW+ge4JYGBN6DEq+aaNawJ1ddxKdBGX4Oz67G/Eq9pWfG9J7GbA4lf8GivIHWXL8Ge46+ra4jsRgSbzx8jfwMGKLk3rA9NjPNgaEb4A2pbGOxLXuMKbAZbNQTrZPKuGEY7LIFBhDuiefAOk2+IRdkdq8Ha9jHjMecmsZXRJ/CyI9yg9CI2xKYREUM9lHFtJFOV+DsdZf2cG0Q39pVUdZyqFSgwx3yVAPjaudtQfeL6DFQ/N6Pf+uEs/20LguD9YoTyeXY0WrbKs1V5oMCE/5bR0MXWZSxqzhxDgIiQjgT1NaZAJmpxsZrATpncBPIU1+DHvLltzXc5qTYlLoRwjCtaHHSfNkyc9F2b9/EXzphjtlRDcV9YA8Sfhor8+zI8R6OPYGGo7UebVImkNKZzRUmbN+4tD5AwJS1GcBO+FmlxmJxTulYvuBB4PqOpI00HE+dQeh5eoiTrFVC1dFAocNUoykXQ0LBf0cRgClm/B5a/yBf2rmTGHG35MyB5c9FGvD1z+goP/nIQxkg0BNCxaEpRiXvWtKOg0BEQqfIyaAVZE75hYgAKTB7tav1MeGbmemzQgE5d1ZjrnVejG6P079i2beNvbGq50ghQjDEbJfloRttFm5a/dnb4kvqSRg2YS+6s7qB6vck3myI2Ah6krbqywrFHLmEq0="
   email:
     recipients:
       - martinroldan889@gmail.com
@@ -21,7 +22,8 @@ deploy:
   provider: heroku
   skip-cleanup: true
   keep-history: true
-  api_key: e5bbf636-9dbd-46a9-a11d-071f20ea2e54
+  api_key:
+    secure: "T1lZFflc0++scXFzpX4ZTL+XN8vOS6xkiKwgFKNKGZ+/aXR52gCIpKwsAJ63Jwbmb8HYGicWuVjBlHQqISW8FVgRN3RR4tiKP64pta11D/sU56+FdNHpocdzJy5PIO8JRn8oZnTpq3Y/1ahbjXTQ0bbR1oiUyIXaoV88yIF3NrMUYiFiJZdl40Uq2FnnE8RFF+xhPS+uHHyNmXYgyd5YaBAVpdOP+Iy6tGU7x4jqWgTp84pC8cqVBtQ+eUg6ZmJhMu/RtB8e+PQn3xfMEpI6IHhUt+No1EtaXt9mOHMyMKBTuZArzO3GpC1UNpa1teIYLzDgmvBQgmVPyDOqFAQwRAm48i/Niz6GTwTWR9iaj0azJCPgx3D+4YX+siDLraCggKZcnXHum2CJ5mv/SteA0zCWHV/WFmcksJBG39NZgM93W4SlfWU9Pxtvp13Swinultle2bL2EQ/1yLYvfHy6OJhdhk9gzEI39YuyqJ+2Z31fAhEkblCv7uqbl4uFNhck0tyrHC8clwMtcsAuFkSW17fNzWRckOh6TVzaCVizEJ2pIpZ5+5BE/ae2GkPHuAAjoHa2rvhQMkVQdWM6dsM8cP7waiOLBMpbbys6WYcYIsy5GedJie9EaxUnsHrQ3kLI35AE7ssB+EF7TyZQdIr7oo7oUppYYWGnwHbK7cQ4w8Y="
   app: travisci-backend-heroku
   on:
     repo: mxrold/travisci-backend-heroku
